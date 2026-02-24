@@ -14,7 +14,7 @@ public class Main {
         }
 
         switch (clock) {
-            case 0: case 1: case 2: case 3: case 4: case 5: case 6: case 7: case 8:
+            case 0: case 1: case 2: case 3: case 4: case 5: case 6: case 7:
             case 20: case 21: case 22: case 23:
                 return true;
             default:
@@ -23,7 +23,7 @@ public class Main {
     }
 
     public static boolean hasTeen(int firstAge, int secondAge, int thirdAge) {
-       if (firstAge >= 13 && firstAge < 19 || secondAge >= 13 && secondAge < 19 || thirdAge >= 13 && thirdAge < 19) {
+       if (firstAge >= 13 && firstAge <= 19 || secondAge >= 13 && secondAge <= 19 || thirdAge >= 13 && thirdAge <= 19) {
            return true;
        } else {
            return false;
